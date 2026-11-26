@@ -14,8 +14,10 @@ class DetailPeminjaman:
         self.tanggalKembali = None
         self.kondisiKembali = None
     
-    def getAlat(self): return self.alat
-    def getJumlah(self): return self.jumlah
+    def getAlat(self):
+        return self.alat
+    def getJumlah(self):
+        return self.jumlah
     
     def kembalikan(self, tgl, kondisi):
         if self.sudahKembali:
@@ -30,7 +32,8 @@ class DetailPeminjaman:
         self.kondisiKembali = kondisi
         self.alat.kembali(kondisi, self.jumlah)
     
-    def isKembali(self): return self.sudahKembali
+    def isKembali(self):
+        return self.sudahKembali
     
     def getDetail(self):
         if self.sudahKembali:
