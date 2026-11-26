@@ -27,12 +27,18 @@ class Transaksi:
         
         mahasiswa.tambahTransaksi(self)
     
-    def getIdTransaksi(self): return self.id_transaksi
-    def getMahasiswa(self): return self.mahasiswa
-    def getTanggalPinjam(self): return self.tanggal_pinjam
-    def getBatasKembali(self): return self.batas_kembali
-    def getStatus(self): return self.status
-    def getDaftarDetail(self): return self.daftar_detail
+    def getIdTransaksi(self):
+        return self.id_transaksi
+    def getMahasiswa(self):
+        return self.mahasiswa
+    def getTanggalPinjam(self):
+        return self.tanggal_pinjam
+    def getBatasKembali(self):
+        return self.batas_kembali
+    def getStatus(self):
+        return self.status
+    def getDaftarDetail(self):
+        return self.daftar_detail
     
     def tambahDetail(self, alat, jumlah=1):
         detail = DetailPeminjaman(alat, jumlah)
